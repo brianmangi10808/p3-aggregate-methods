@@ -1,4 +1,5 @@
 from datetime import datetime
+
 class Student:
     def __init__(self, name):
         self.name = name
@@ -17,7 +18,6 @@ class Student:
 
 class Course:
     def __init__(self, title):
-
         self.title = title
         self._enrollments = []
 
@@ -29,7 +29,6 @@ class Course:
 
     def get_enrollments(self):
         return self._enrollments.copy()
-
 
 class Enrollment:
     all = []
